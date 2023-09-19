@@ -1,0 +1,104 @@
+Ver Versão:
+git --version
+
+ver configurações tanto de email quanto de usuario
+git config --global --list
+
+adcionar usuario e email:
+git config --global user.name ""
+git config --global user.email ""
+
+acionar diretorio:
+cd (Nome do diretorio)
+ex:cd Ativ-ETEC-2023
+
+criando repositório:
+para isso deve-se criar uma pasta e usar os comandos anteriores.
+iniciando git:
+git init
+
+status do seu projeto:
+git status
+
+adcionando arquivos:
+git add . ou git add (nome arquivo)  
+
+comitando arquivos:
+git commit -m ""
+
+historico do commit
+git log
+
+fazendo mais de um comando no git:
+usa-se &&
+ex:
+git add . && git commit -m ""
+
+descobrindo o id do commit:
+git log --oneline
+
+voltando commit passado atraves do id do commit:
+git checkout (id)
+ou seja eu irei voltar para o commit anterior.
+
+
+Revertendo commit mas deixando o o historico do que eu tinha feito:
+git revert (id)
+
+
+
+voltando no tempo em um commit:
+  git reset (id)
+"ao usar isso ele irá exluir o commit seu mas suas alterações continuarão 
+no editor."
+
+
+excluindo todo o commit até mesmo no seu editor:
+git reset --hard
+
+ignorando arquivos:
+criar uma pasta 
+gitnore
+e colocar o arquivo dentro dela.
+
+
+BRANCH
+
+puxar minhas branch:
+git branch
+
+criando branch:
+git branch (nome da branch)
+
+mudando de branch:
+git checkout (nome da branch)
+
+deletando branch:
+git branch -d (nome branch)->PERGUNTA SE QUERO REALMENTE DELETAR
+git branch -D (nome branch)->DELETANDO DE UMA VEZ
+
+FUNDINDO BRANCH
+primeiro esteja no BRANCH PRINCIPAL
+agora digite>>
+git merge (nome da Branch)
+
+
+COMO RESOLVER CONFLITOS DA FUSÃO:
+
+
+
+fazendo push atraves do https
+git push (endereço web).git
+
+adicionando oringi:
+git remote add origin (endereço web)
+
+vendo minhas origens:
+git remote -v
+
+Fazendo isso eu poderei mandar os arquivo com mais facilidade:
+git push (endereço web) (main ou branch)
+
+Pegar todas as atualizaçoes do repositorio:
+git pull oringin (main ou branch)
+
